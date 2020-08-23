@@ -3,18 +3,14 @@ language: node_js
 node_js:
   - "12"
 
+install:
+    - cd frontend 
+    - npm ci 
+    - cd .. 
+    - cd cms 
+    - npm ci
+
 script:
-    - ls
-    - cd frontend
-    - ls
-    - npm install
-    - npm test
-    - npm run build
-    - ls
     - cd ..
-    - ls
-    - cd cms
-    - ls
-    - npm install
-    - npm run build
-    - npm 
+    - cd frontend
+    - npm test
