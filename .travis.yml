@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - "12"
+
+script:
+    - cd frontend
+    - npm test
+    - npm run build
+    - cd ..
+    - cd cms
+    - npm run build
