@@ -4,9 +4,17 @@ node_js:
   - "12"
 
 script:
+    - ls
     - cd frontend
+    - ls
+    - npm install
     - npm test
     - npm run build
+    - ls
     - cd ..
+    - ls
     - cd cms
+    - ls
+    - npm install
     - npm run build
+    - npm 
